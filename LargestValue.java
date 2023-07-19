@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LargestValue {
+public class Main {
    
 static String largest(ArrayList<Integer> l)
 {
@@ -12,8 +12,7 @@ static String largest(ArrayList<Integer> l)
 		s += Integer.toString(l.get(i));
 	}
 	lst.add(s);
-	} while (
-	nextPermutation(l));
+	} while (nextPermutation(l));
 	
 
 	return Collections.max(lst);
@@ -35,8 +34,7 @@ static boolean nextPermutation(ArrayList<Integer> nums)
 	}
 
 	Collections.swap(nums, i, j);
-	Collections.reverse(
-	nums.subList(i + 1, nums.size()));
+	Collections.reverse(nums.subList(i + 1, nums.size()));
 	return true;
 }
 
@@ -44,7 +42,6 @@ public static void main(String[] args)
 {
 	ArrayList<Integer> v = new ArrayList<Integer>(
 	Arrays.asList(54, 546, 548, 60));
-	System.out.println(
-	largest(v)); 
+	System.out.println(largest(v)); 
 }
 }
