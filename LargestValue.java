@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class LargestValue {
    
 static String largest(ArrayList<Integer> l)
 {
